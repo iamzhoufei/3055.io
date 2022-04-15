@@ -44,7 +44,7 @@ function pathToTitle (path: string) {
 }
 
 onMounted(() => {
-  console.log(props.ctx)
+  // console.log(props.ctx)
 })
 
 </script>

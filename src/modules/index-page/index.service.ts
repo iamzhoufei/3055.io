@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common'
-import axios from 'axios'
+// import axios from 'axios'
+import { request } from '~/common'
 // import { IndexData } from '~/typings/data'
 
 @Injectable()
@@ -9,7 +10,7 @@ export class ApiService {
   }
 
   async getTodayEvent (): Promise<any> {
-    return await axios({
+    return await request({
       url: 'http://v.juhe.cn/todayOnhistory/queryEvent.php',
       method: 'GET',
       params: {

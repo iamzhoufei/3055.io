@@ -29,8 +29,8 @@ indexStore.setData(props.reactiveFetchData.value)
 
 const indexData = indexStore.data
 
-console.log(indexData)
-console.log(props.reactiveFetchData.value.result)
+// console.log(indexData)
+// console.log(props.reactiveFetchData.value.result)
 
 const events = ref(props.reactiveFetchData.value.result || [])
 
@@ -40,8 +40,6 @@ function toDetail () {
 
 async function handleRefresh () {
   const result = await getTodayEvent({ date: '5/14' })
-  console.log(result.data.result)
-
   events.value = result.data.result ?? []
 }
 

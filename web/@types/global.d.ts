@@ -6,5 +6,6 @@ declare global {
     __USE_VITE__?: boolean
     __INITIAL_DATA__?: IWindow['__INITIAL_DATA__']
   }
+  // eslint-disable-next-line @typescript-eslint/naming-convention
   const __isBrowser__: Boolean
 }
